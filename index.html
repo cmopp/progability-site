@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progability Sistemas Ltda — Defensive cybersecurity, Rio de Janeiro</title>
+  <meta name="description"
+    content="Progability Sistemas Ltda is a Brazilian cybersecurity consultancy focused on attack-surface management, endpoint detection and response, and vulnerability prioritization.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Public+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F6F7F9;
+      --surface: #FFFFFF;
+      --ink: #18202E;
+      --muted: #556070;
+      --rule: #D8DDE4;
+      --accent: #23617F;
+      --serif: "Literata", Georgia, "Times New Roman", serif;
+      --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #12171F;
+        --surface: #1A212C;
+        --ink: #E7EAEE;
+        --muted: #9AA4B2;
+        --rule: #2D3644;
+        --accent: #7DB8D6;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 1.0625rem/1.6 var(--sans);
+    }
+
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+    }
+
+    h1,
+    h2 {
+      font-family: var(--serif);
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-size: 1.375rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    .lede {
+      font-size: 1.1875rem;
+      color: var(--muted);
+      margin-top: 1rem;
+      max-width: 36rem;
+    }
+
+    section {
+      margin-top: 3.25rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.15em;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* Company register: the one emphasized element on the page */
+    .register {
+      margin-top: 2.5rem;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 1.75rem;
+    }
+
+    .register h2 {
+      font-size: 1.125rem;
+    }
+
+    .register dl {
+      display: grid;
+      grid-template-columns: 11rem 1fr;
+      gap: 0.6rem 1.25rem;
+      margin: 1rem 0 0;
+    }
+
+    .register dt {
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+
+    .register dd {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    @media (max-width: 34rem) {
+      .register dl {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+      }
+
+      .register dd {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    ul.services {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.services li {
+      padding: 0.9rem 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    ul.services li:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    ul.services strong {
+      display: block;
+      font-weight: 600;
+    }
+
+    ul.services span {
+      color: var(--muted);
+    }
+
+    footer {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 3rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Progability Sistemas Ltda</h1>
+      <p class="lede">An independent cybersecurity consultancy in Rio de Janeiro. We help organizations see their
+        external attack surface, run their endpoint defenses well, and fix the vulnerabilities that matter first.</p>
+    </header>
+
+    <aside class="register" aria-labelledby="reg-title">
+      <h2 id="reg-title">Company details</h2>
+      <dl>
+        <dt>Legal name</dt>
+        <dd>Progability Sistemas Ltda</dd>
+        <dt>Legal form</dt>
+        <dd>Sociedade Limitada Unipessoal (single-member limited liability company)</dd>
+        <dt>CNPJ</dt>
+        <dd>55.781.886/0001-40</dd>
+        <dt>In operation since</dt>
+        <dd>June 2024</dd>
+        <dt>Registered in</dt>
+        <dd>Rio de Janeiro, RJ, Brazil</dd>
+        <dt>Managing partner</dt>
+        <dd>Carlos Manuel de Oliveira Pinto Pereira</dd>
+      </dl>
+    </aside>
+
+    <section aria-labelledby="work">
+      <h2 id="work">What we do</h2>
+      <ul class="services">
+        <li><strong>External attack-surface management</strong><span>Discovery and monitoring of internet-facing assets,
+            with advisory and automation around EASM platforms such as Ionix and CyCognito.</span></li>
+        <li><strong>Endpoint detection and response</strong><span>Advisory, tuning, API automation and threat hunting
+            for SentinelOne deployments.</span></li>
+        <li><strong>Vulnerability prioritization</strong><span>Risk-based reporting that ranks findings by real-world
+            exploitability, including EPSS, so teams patch what attackers are most likely to use.</span></li>
+        <li><strong>Security tooling and training</strong><span>Custom integrations and reporting tools built on
+            security platform APIs, and training for the teams who run them.</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="approach">
+      <h2 id="approach">How we work</h2>
+      <p>All of our work is defensive. We work only on systems our clients own or are authorized to assess, under
+        written engagement terms, and we handle client data under confidentiality agreements.</p>
+      <p>We deliver services directly and through partner firms that contract Progability for specialist engagements.
+      </p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>Carlos Pereira, founder and principal consultant<br>
+        <a href="mailto:carlos@progability.com.br">carlos@progability.com.br</a><br>
+        <a href="https://www.linkedin.com/in/cmopp">LinkedIn profile</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    © 2026 Progability Sistemas Ltda. Rio de Janeiro, Brazil.
+  </footer>
+</body>
+
+</html>
